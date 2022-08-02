@@ -90,11 +90,7 @@ M.show = function ()
   if #header > cols then
     header = header:sub(1, cols)
   end
-  local lines = {
-    "┏" .. string.rep("━", cols - 2) .. "┓",
-    "┃ " .. header .. string.rep(" ", cols - #header - 4) .. " ┃",
-    "┗" .. string.rep("━", cols - 2) .. "┛",
-  }
+  local lines = {}
   for i, d in ipairs(diag) do
     table.insert(lines, "")
     local level = severity_map[d.severity] or "UNKNOWN"
