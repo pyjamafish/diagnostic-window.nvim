@@ -1,13 +1,14 @@
-# Diagnostic Window
+# Diagnostic Window (no header)
 
-Shows the diagnostic messages for the given line in a split window. This was
-created to help decipher very long typescript messages that don't fit nicely into 
-a floating window or virtual text.
+This repo patches [diagnostic-window.nvim](https://github.com/cseickel/diagnostic-window.nvim) to remove the header.
+<img width="842" alt="image" src="https://user-images.githubusercontent.com/29507110/182702854-d06b579c-2732-4ee6-9f8a-fef88472675c.png">
 
-This also adds custom syntax highlighting for the diagnostic message.The current 
-version was designed specifically for typescript errors.
-
-![diagnostic-window-typescript-example](https://user-images.githubusercontent.com/5160605/175788492-320fb6e7-a11d-4b16-9083-acb50f3e1d30.png)
+Note that I have no idea how to code in Lua, so use at your own risk! As the wonderful [license](./LICENSE) states:
+> IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 
 
 ## Quickstart
